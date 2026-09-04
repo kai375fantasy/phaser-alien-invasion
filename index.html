@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ludo - Ci 536 - Phaser 3 Game</title>
+  <style>
+    @import url('https://static.zeoseven.com/zsft/109/main/result.css');
+  </style>
+</head>
+<body>
+  <script src="./js/phaser.js"></script>
+   
+  <script src="./js/BootScene.js"></script> <!-- 这个场景通常用来加载资源（图片、音效等）并在加载完后跳转到主菜单。 -->
+  <script src="./js/MainMenuScene.js"></script> <!-- 这是主菜单场景，用于显示游戏标题、提供难度选择（满足“玩家技能等级”功能）或“开始游戏”等交互。 -->
+  <script src="./js/PlayScene.js"></script><!--这是核心游戏场景，负责大部分的功能实现：玩家移动、子弹发射、敌人AI、碰撞检测、得分与高分功能等。  -->
+  <script src="./js/GameOverScene.js"></script><!-- 游戏结束时显示当前得分、最高分，并提供返回主菜单或再玩一次的方式。 -->
+
+  <!-- 3. 最后引入主配置文件 main.js -->
+  <script src="./js/main.js"></script>  <!-- 这是我们配置和启动 Phaser 的文件 -->
+</body>
+</html>
